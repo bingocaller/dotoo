@@ -24,6 +24,11 @@
 			</template>
 			<to-do done>
 				<template shadowrootmode="open">
+					<style>
+						:host([done]) {
+							text-decoration: line-through;
+						}
+					</style>
 					<li>
 						<slot></slot>
 					</li>
@@ -32,6 +37,11 @@
 			</to-do>
 			<to-do done>
 				<template shadowrootmode="open">
+					<style>
+						:host([done]) {
+							text-decoration: line-through;
+						}
+					</style>
 					<li>
 						<slot></slot>
 					</li>
@@ -40,6 +50,11 @@
 			</to-do>
 			<to-do>
 				<template shadowrootmode="open">
+					<style>
+						:host([done]) {
+							text-decoration: line-through;
+						}
+					</style>
 					<li>
 						<slot></slot>
 					</li>
