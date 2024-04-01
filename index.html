@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Do Too</title>
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+	<main>
+		<h1>Do too</h1>
+		<form action="add-todo">
+			<label for="todo-input">What needs doing?</label>
+			<input id="todo-input" type="text">
+			<button>Add</button>
+		</form>
+		<to-dos>
+			<template shadowrootmode="open">
+				<ul>
+					<slot></slot>
+				</ul>
+			</template>
+			<to-do done>
+				<template shadowrootmode="open">
+					<li>
+						<slot></slot>
+					</li>
+				</template>
+				Buy milk
+			</to-do>
+			<to-do done>
+				<template shadowrootmode="open">
+					<li>
+						<slot></slot>
+					</li>
+				</template>
+				Make coffee
+			</to-do>
+			<to-do>
+				<template shadowrootmode="open">
+					<li>
+						<slot></slot>
+					</li>
+				</template>
+				Finish website
+			</to-do>
+		</to-dos>
+	</main>
+</body>
+
+</html>
